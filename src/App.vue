@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  font-family: sans-serif;
   text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.sign-up-form {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.sign-up-input {
+  width: 70%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.text-input {
+  width: 80%;
+}
+
+.sign-up-button {
+  display: flex;
+  justify-content: center;
 }
 </style>
